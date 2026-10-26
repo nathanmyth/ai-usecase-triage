@@ -1,0 +1,144 @@
+{
+  "version": "1.0",
+  "disclaimer": "Simplified internal policy modeled on the EU AI Act risk tiers. For portfolio and illustration only; not legal advice.",
+  "tiers": [
+    {
+      "id": "prohibited",
+      "rank": 3,
+      "label": "Prohibited",
+      "summary": "Practices the company will not build or buy.",
+      "decision": "Reject",
+      "review_sla_days": 2,
+      "approvers": ["AI Governance Board", "Legal"],
+      "controls": [
+        "Stop work and notify AI Governance Board",
+        "Legal review of whether any redesign is possible"
+      ],
+      "categories": [
+        {
+          "name": "Social scoring",
+          "triggers": ["social score", "social scoring", "trustworthiness score", "score customers based on social media", "score people based on their behavior"]
+        },
+        {
+          "name": "Emotion recognition at work or school",
+          "triggers": ["emotion recognition", "detect emotions", "infer emotions", "employee mood from webcam", "facial expressions of employees", "facial expressions of students"]
+        },
+        {
+          "name": "Manipulative or exploitative techniques",
+          "triggers": ["subliminal", "exploit vulnerabilities", "manipulate users into", "target vulnerable users", "dark pattern"]
+        },
+        {
+          "name": "Biometric categorization of sensitive traits",
+          "triggers": ["infer race", "infer religion", "infer sexual orientation", "infer political", "predict ethnicity"]
+        }
+      ]
+    },
+    {
+      "id": "high",
+      "rank": 2,
+      "label": "High risk",
+      "summary": "Allowed only with full controls, documentation, and human oversight.",
+      "decision": "Approve with conditions",
+      "review_sla_days": 15,
+      "approvers": ["AI Governance Board", "Legal", "Data Protection Officer", "Business owner (VP)"],
+      "controls": [
+        "Risk management plan and impact assessment",
+        "Bias and fairness testing across protected groups",
+        "Human-in-the-loop for every consequential decision",
+        "Model documentation (model card) and decision logging",
+        "Accuracy and robustness thresholds agreed before launch",
+        "Appeal process for affected people",
+        "Quarterly post-launch monitoring review"
+      ],
+      "categories": [
+        {
+          "name": "Employment and HR decisions",
+          "triggers": ["resume", "résumé", "job applicant", "candidates", "hiring", "recruit", "promotion", "termination", "performance rating", "performance score", "employee monitoring", "monitor employee", "workforce allocation"]
+        },
+        {
+          "name": "Credit, insurance, and essential services",
+          "triggers": ["credit limit", "credit score", "creditworth", "loan approval", "approve loans", "lending decision", "insurance pricing", "insurance premium", "eligibility for benefits", "public benefits"]
+        },
+        {
+          "name": "Education and assessment",
+          "triggers": ["grade exams", "grading", "exam proctoring", "proctor", "student admission", "admissions decision", "assess students"]
+        },
+        {
+          "name": "Biometric identification",
+          "triggers": ["facial recognition", "face recognition", "identify visitors", "biometric identification", "voiceprint", "fingerprint matching"]
+        },
+        {
+          "name": "Critical infrastructure safety",
+          "triggers": ["power grid", "electricity grid", "water supply", "gas pipeline", "safety component", "traffic control", "medical device", "diagnos"]
+        },
+        {
+          "name": "Law enforcement, migration, and justice",
+          "triggers": ["law enforcement", "police", "predict crime", "border control", "visa application", "court ruling", "sentencing"]
+        }
+      ]
+    },
+    {
+      "id": "limited",
+      "rank": 1,
+      "label": "Limited risk",
+      "summary": "Allowed with transparency obligations.",
+      "decision": "Approve",
+      "review_sla_days": 5,
+      "approvers": ["AI Governance reviewer", "Business owner"],
+      "controls": [
+        "Tell users they are interacting with AI",
+        "Label AI-generated or synthetic content",
+        "Offer a path to a human",
+        "Content safety filters and abuse monitoring"
+      ],
+      "categories": [
+        {
+          "name": "Conversational AI facing people",
+          "triggers": ["chatbot", "chat bot", "virtual assistant", "customer-facing assistant", "conversational agent", "customer support bot", "answers customer questions"]
+        },
+        {
+          "name": "Synthetic or generated content",
+          "triggers": ["deepfake", "synthetic voice", "voice clone", "clone the voice", "ai-generated image", "generated images", "generate images", "generated video", "avatar of", "marketing copy"]
+        }
+      ]
+    },
+    {
+      "id": "minimal",
+      "rank": 0,
+      "label": "Minimal risk",
+      "summary": "Allowed with standard engineering practices.",
+      "decision": "Approve",
+      "review_sla_days": 2,
+      "approvers": ["Team lead"],
+      "controls": [
+        "Register the use case in the AI inventory",
+        "Follow standard security and data handling",
+        "Basic quality evaluation before launch"
+      ],
+      "categories": []
+    }
+  ],
+  "overlays": [
+    {
+      "id": "personal_data",
+      "label": "Personal data",
+      "triggers": ["personal data", "customer data", "employee data", "pii", "names and emails", "health", "medical", "biometric", "location data", "transcrib", "recordings"],
+      "controls": ["Privacy impact assessment (DPIA)", "Data retention and deletion plan"],
+      "approvers": ["Data Protection Officer"]
+    },
+    {
+      "id": "third_party_model",
+      "label": "Third-party model or vendor",
+      "triggers": ["vendor", "third-party", "third party", "saas", "openai", "api from", "external model", "off-the-shelf"],
+      "controls": ["Vendor security and AI risk assessment", "Contract terms: no training on our data, retention limits"],
+      "approvers": ["Procurement", "Security"]
+    },
+    {
+      "id": "external_users",
+      "label": "External users affected",
+      "triggers": ["customers", "public", "consumers", "applicants", "patients", "students", "website visitors"],
+      "controls": ["Customer-facing launch review", "Incident response runbook"],
+      "approvers": []
+    }
+  ]
+}

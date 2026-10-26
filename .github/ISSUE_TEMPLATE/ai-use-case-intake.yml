@@ -1,0 +1,33 @@
+name: AI use-case intake
+description: Propose a new AI use case for governance triage
+labels: ["intake"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Use-case name
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What will the AI do, and who does it affect?
+      description: Plain English. Include what decisions it makes or supports.
+    validations:
+      required: true
+  - type: dropdown
+    id: users
+    attributes:
+      label: Who is affected?
+      options: [Internal employees only, Customers or the public, Job applicants or candidates, Students or learners, Patients]
+    validations:
+      required: true
+  - type: dropdown
+    id: data
+    attributes:
+      label: Does it use personal data?
+      options: ["No", "Yes", "Not sure"]
+  - type: input
+    id: owner
+    attributes:
+      label: Business owner (VP or above)

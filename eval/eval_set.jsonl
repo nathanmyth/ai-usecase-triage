@@ -1,0 +1,24 @@
+{"id": "c01", "split": "core", "expected": "high", "title": "Resume screening assistant", "description": "Score incoming resumes against job descriptions and rank candidates so recruiters review the top 20 first."}
+{"id": "c02", "split": "core", "expected": "limited", "title": "Website support chatbot", "description": "A chatbot on our public website that answers customer questions about orders and returns using our help center articles."}
+{"id": "c03", "split": "core", "expected": "minimal", "title": "Code completion for engineers", "description": "Enable an AI code completion tool in the IDE for internal software engineers."}
+{"id": "c04", "split": "core", "expected": "high", "title": "Consumer credit limit model", "description": "Set the initial credit limit for new consumer card accounts based on application and bureau data."}
+{"id": "c05", "split": "core", "expected": "prohibited", "title": "Call-center wellbeing monitor", "description": "Use emotion recognition on agent webcams to flag stressed or disengaged employees to their managers."}
+{"id": "c06", "split": "core", "expected": "limited", "title": "Ad creative generator", "description": "Generate images and marketing copy variants for social media ad campaigns."}
+{"id": "c07", "split": "core", "expected": "minimal", "title": "Warehouse demand forecasting", "description": "Forecast weekly SKU demand per warehouse to set reorder points."}
+{"id": "c08", "split": "core", "expected": "high", "title": "Sales performance scoring", "description": "Produce a quarterly performance score for each sales rep that managers use in promotion decisions."}
+{"id": "c09", "split": "core", "expected": "prohibited", "title": "Customer trust score", "description": "Build a social score for customers from their social media activity and use it to deny premium services."}
+{"id": "c10", "split": "core", "expected": "minimal", "title": "Email spam filter upgrade", "description": "Replace the rules-based spam filter on corporate email with an ML classifier."}
+{"id": "c11", "split": "core", "expected": "high", "title": "Grid failure prediction", "description": "Predict transformer failures on the power grid and automatically reroute load as a safety component."}
+{"id": "c12", "split": "core", "expected": "limited", "title": "CEO video avatar", "description": "Clone the voice of our CEO with a synthetic voice to produce internal training videos."}
+{"id": "c13", "split": "core", "expected": "high", "title": "Online exam proctoring", "description": "Proctor certification exams for external students by flagging suspicious behavior on video."}
+{"id": "c14", "split": "core", "expected": "high", "title": "Lobby visitor recognition", "description": "Use facial recognition to identify visitors as they enter our headquarters lobby."}
+{"id": "c15", "split": "core", "expected": "minimal", "title": "Meeting summaries", "description": "Summarize internal meeting transcripts into action items for attendees using a third-party SaaS tool."}
+{"id": "c16", "split": "core", "expected": "minimal", "title": "Invoice data extraction", "description": "Extract supplier name, amount, and due date from PDF invoices into the ERP system."}
+{"id": "p01", "split": "paraphrase", "expected": "high", "title": "Graduate program shortlist", "description": "Read applications to our graduate program and pick which people move to interviews based on predicted job success."}
+{"id": "p02", "split": "paraphrase", "expected": "high", "title": "Small business loans", "description": "Decide automatically whether small business owners qualify for financing and at what interest rate."}
+{"id": "p03", "split": "paraphrase", "expected": "limited", "title": "Product Q&A helper", "description": "Let shoppers type questions on product pages and get instant AI replies about sizing and materials."}
+{"id": "p04", "split": "paraphrase", "expected": "prohibited", "title": "Classroom engagement camera", "description": "Cameras in training rooms read learners' facial expressions to tell instructors who is bored or upset."}
+{"id": "p05", "split": "paraphrase", "expected": "high", "title": "Shift attrition flags", "description": "Flag warehouse workers likely to quit so managers can decide whose contracts to renew."}
+{"id": "p06", "split": "paraphrase", "expected": "minimal", "title": "Translation of internal docs", "description": "Translate internal engineering wiki pages between English and Spanish."}
+{"id": "p07", "split": "paraphrase", "expected": "high", "title": "Patient triage assistant", "description": "Suggest which emergency room patients should be seen first based on symptoms entered at check-in."}
+{"id": "p08", "split": "paraphrase", "expected": "limited", "title": "Personalized outreach emails", "description": "Write personalized sales emails that are sent to prospects without a human editing them."}
