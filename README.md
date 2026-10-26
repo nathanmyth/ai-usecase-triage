@@ -112,4 +112,4 @@ The policy is a simplified model of the EU AI Act risk tiers, built for illustra
 
 ## About me
 
-_TODO: one or two lines, e.g. "AI Technical Program Manager focused on responsible AI governance and taking LLM products to production." + LinkedIn link._
+Built by **Senthilnathan Abboy Selvaraj**, AI Technical Program Manager. [LinkedIn](https://www.linkedin.com/in/senthilnathanas) · [More projects](https://github.com/nathanmyth)
