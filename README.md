@@ -4,6 +4,8 @@
 
 > 📌 **Portfolio note:** This is an AI governance program, built and run end to end: policy design, a hybrid rules + LLM classifier with an asymmetric safety metric, evaluation-driven launch gates, and a portfolio register for executives and auditors. The `docs/` folder is as important as the code.
 
+![AI Use-Case Triage demo: tiering a chatbot, a prohibited emotion-recognition use case, and a paraphrased hiring case caught by the fail-safe](docs/assets/demo.gif)
+
 **🔗 Try it in your browser:** [nathanmyth.github.io/ai-usecase-triage/demo](https://nathanmyth.github.io/ai-usecase-triage/demo/) (rules engine, no setup needed)
 
 ---
